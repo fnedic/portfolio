@@ -8,11 +8,25 @@ import spring from "../Images/stack/spring-boot.svg";
 import zeabur from "../Images/stack/zeabur.svg";
 import css from "../Images/stack/css3.png";
 import html from "../Images/stack/html.png";
-import js from "../Images/stack/js.png"
+import js from "../Images/stack/js.png";
+import { GitHub } from "@mui/icons-material";
 
 const MMTLH = () => {
   const { isMobile } = useIsMobile();
-  const Buttons = ["Go to page", "Git Hub"];
+  const Buttons = [
+    {
+      name: "Go to Page",
+      link: "https://mmtlh.zeabur.app/",
+    },
+    {
+      name: (
+        <>
+          <GitHub sx={{mr:1}} /> github
+        </>
+      ),
+      link: "https://github.com/fnedic/MiMaridoTeLoHace",
+    },
+  ];
   const svg = [java, spring, zeabur];
   const png = [css, html, js];
   return (
@@ -29,8 +43,15 @@ const MMTLH = () => {
         >
           {Buttons.map((b) => (
             <Grid item key={b}>
-              <Button size="large" variant="text" sx={ProjectsButtonStyle}>
-                {b}
+              <Button
+                size="large"
+                variant="text"
+                sx={ProjectsButtonStyle}
+                href={b.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {b.name}
               </Button>
             </Grid>
           ))}

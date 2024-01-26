@@ -97,7 +97,7 @@ const GuardiaCDC = () => {
             management of medical on-call shifts, allowing doctors to exchange
             these events. <br />
             <br />
-            Currently, I am continuing to develop new features for the
+            Currently, I'm still developing new features for the
             application, maintaining open communication with the clinic
             authorities, and adapting it to their needs and requests.
           </Typography>

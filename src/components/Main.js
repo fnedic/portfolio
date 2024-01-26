@@ -23,10 +23,14 @@ import profile from "./Images/profile-img.jpeg";
 import { AttachFileOutlined, Email, MyLocation } from "@mui/icons-material";
 import { useIsMobile } from "./Hooks/useIsMobile";
 import { useCopyToClipboard } from "@uidotdev/usehooks";
+import resume from "./Documents/resume-nedic-facundo.pdf";
 
 const Main = () => {
   const { isMobile } = useIsMobile();
   const email = "facunedic@gmail.com";
+  const openResume = () => {
+    window.open(resume, "_blank");
+  };
   // eslint-disable-next-line no-unused-vars
   const [copiedText, copyToClipboard] = useCopyToClipboard();
   const [open, setOpen] = useState(false);
@@ -100,7 +104,7 @@ const Main = () => {
               spacing={isMobile ? 5 : 2}
             >
               <Grid item>
-                <Button sx={AboutButtonStyle} size="large" variant="text">
+                <Button sx={AboutButtonStyle} size="large" variant="text" onClick={openResume}>
                   <AttachFileOutlined sx={{ mr: 1 }} /> RESUME
                 </Button>
               </Grid>
