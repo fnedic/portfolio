@@ -23,7 +23,7 @@ import profile from "./Images/profile-img.jpeg";
 import { AttachFileOutlined, Email, MyLocation } from "@mui/icons-material";
 import { useIsMobile } from "./Hooks/useIsMobile";
 import { useCopyToClipboard } from "@uidotdev/usehooks";
-import resume from "./Documents/resume-nedic-facundo.pdf";
+import resume from "./Documents/Facundo-Nedic-CV.pdf";
 
 const Main = () => {
   const { isMobile } = useIsMobile();

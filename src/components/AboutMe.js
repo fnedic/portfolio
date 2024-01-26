@@ -10,7 +10,7 @@ import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 import profile from "./Images/profile-img.jpeg";
 import gitHub from "./Images/social/github.webp";
 import linkedIn from "./Images/social/linkedin.webp";
-import resume from "./Documents/resume-nedic-facundo.pdf";
+import resume from "./Documents/Facundo-Nedic-CV.pdf";
 
 const AboutMe = () => {
   const social = [
