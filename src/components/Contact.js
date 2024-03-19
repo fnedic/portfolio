@@ -21,7 +21,7 @@ import {
 import { Email, LinkedIn } from "@mui/icons-material";
 import { useCopyToClipboard } from "@uidotdev/usehooks";
 const Contact = () => {
-  const email = "facunedic@gmail.com";
+  const email = "fnedic.dev@gmail.com";
   // eslint-disable-next-line no-unused-vars
   const [copiedText, copyToClipboard] = useCopyToClipboard();
   const [open, setOpen] = useState(false);
